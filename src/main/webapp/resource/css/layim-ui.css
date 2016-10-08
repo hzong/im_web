@@ -1,0 +1,19 @@
+@CHARSET "UTF-8";
+.layim-ui_offline{
+	 -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.layim-ui-find_list{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.layim-ui-remark{
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.layim-ui-space{
+	margin-top: 5px
+}

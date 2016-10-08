@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.hzong.systech.db.mapper.AccountMapper" >
+
+	<sql id="col_acct">
+		com_account.id,com_account.account,com_account.head_portrait headPortrait,com_account.nick,com_account.sign
+	</sql>
+	
+	
+	<select id="findAccount" resultType="cn.hzong.imweb.account.bean.Account" parameterType="string" >
+		select <include refid="col_acct"></include> from com_account where account like '${value}%'
+	</select>  
+	
+	<select id="getAccount" resultType="cn.hzong.imweb.account.bean.Account" parameterType="string" >
+		select <include refid="col_acct"></include> from com_account where account = #{account}
+	</select>			
+  	
+</mapper>
