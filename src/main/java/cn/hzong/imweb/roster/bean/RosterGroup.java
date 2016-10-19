@@ -15,23 +15,12 @@ public class RosterGroup extends BaseRoster implements Serializable {
 	*/ 
 	private static final long serialVersionUID = 1L;
 	/** 
-	* rgId(Long)
-	* 好友id
-	*/ 
-	private Long rgId;
-	/** 
 	* remark(String)
 	* 好友备注
 	*/ 
 	private String groupName;
-	public Long getRgId() {
-		return rgId;
-	}
-	public void setRgId(Long rgId) {
-		this.rgId = rgId;
-	}
 	public String getGroupName() {
-		return groupName;
+		return groupName == null ? "" : groupName;
 	}
 	public void setGroupName(String groupName) {
 		this.groupName = groupName;

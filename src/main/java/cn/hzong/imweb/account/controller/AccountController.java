@@ -15,8 +15,8 @@ import cn.hzong.systech.common.result.BaseException;
 import cn.hzong.systech.common.result.BaseResult;
 import cn.hzong.systech.common.result.ECode;
 
-@Controller
-@RequestMapping(SysConstant.URI_ROOT+"acct")
+//@Controller
+//@RequestMapping(SysConstant.URI_ROOT+"acct")
 public class AccountController {
 	
 	@Autowired 

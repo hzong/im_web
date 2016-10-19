@@ -66,5 +66,5 @@ http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">
 	
 	
 	<!-- 倒入文件 -->
-	<!-- <import resource="/spring-mybatis.xml"/> -->
+	 <import resource="/spring-mybatis.xml"/> 
 </beans>

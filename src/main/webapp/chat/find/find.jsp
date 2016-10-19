@@ -35,11 +35,14 @@
 			<div class="col-md-8">
 				<input class="form-control" type="text" placeholder="模糊查询 IM账号、群昵称">
 			</div>
-			&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;
 			<button type="button" id="btn_find" class="btn btn-warning">查询</button>
-			&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;
+        	<button type="button" id="btn_createRoom" class="btn btn-info">建群</button>
+			&nbsp;&nbsp;
 			<input type="radio" name="findtype" value="0">找用户
-        	<input type="radio" name="findtype" value="1">找群
+        	<input type="radio" name="findtype" value="1">找群 
+        	
 		</div>
 		<!-- 此处是渲染 列表 -->
 		</br>

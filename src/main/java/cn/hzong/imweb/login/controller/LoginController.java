@@ -28,6 +28,6 @@ public class LoginController {
 		} catch (BaseException e) {
 		}
 		
-		return "/chat/layim.jsp";
+		return "/chat/demo.jsp";
 	}
 }

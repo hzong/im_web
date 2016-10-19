@@ -26,15 +26,13 @@
 <script type="text/javascript" src="<%=chat_webroot%>resource/script/jquery/jquery-migrate.js"></script>
 <script type="text/javascript" src="<%=chat_webroot%>resource/script/jquery/jquery.json-2.3.min.js"></script> 
 <script type="text/javascript" src="<%=chat_webroot%>resource/script/jquery/jquery.cookie.js"></script>
-
+<script type="text/javascript" src="<%=chat_webroot%>resource/script/layer/layer.js"></script>
 <script type="text/javascript" src="<%=chat_webroot%>resource/script/common/syscom.js"></script>
-<script type="text/javascript" src="<%=chat_webroot%>resource/script/im/layim/laychat.js"></script>  
+
+<script type="text/javascript" src="<%=chat_webroot%>resource/script/im/demo/demo_chat.js"></script>
  
 <link href="<%=chat_webroot%>resource/css/layim-ui.css" rel="stylesheet" media="all">
 <!-- LayIM -->
-<script type="text/javascript" src="<%=chat_webroot%>resource/script/layui/layui.js"></script>
-<link href="<%=chat_webroot%>resource/script/layui/css/layui.css" rel="stylesheet" media="all">
-
 <script type="text/javascript" src="<%=chat_webroot%>resource/script/layer/layer.js"></script>
 
 <!-- 渲染包 -->

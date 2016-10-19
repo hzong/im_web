@@ -29,6 +29,24 @@ LayIM_Find = function(){
 		"source":"hz_chatim"
 	});
 	
+	Find_imSDK.RosterListen = {//好友消息监听
+			/**
+			 * 申请好友事件
+			 * @param _error 错误状态
+			 * @param obj {
+			 * 	fromJid 发送方IM账号,
+			 *  from 平台账号
+			 * 	reason 发送方-描述
+			 * }
+			 */
+			onApplyRoster:function(_error,obj){//申请好友
+				if(_error){
+					layer.msg(_error.message+"("+obj.account+")");
+					return;
+				}
+			}
+	};
+	
 	var node ="#find-list";
 	this.FindType = {
 			User:{code:0,msg:'用户'},
@@ -56,7 +74,8 @@ LayIM_Find = function(){
 			if(val == lif.FindType.Group.code){
 				ft = lif.FindType.Group;
 				url = req_uri+'hz/find';
-				data.type = ft.code;;
+				data.type = ft.code;
+//				$("#btn_createRoom").show();
 			}
 			
 			$.ajax({
@@ -110,9 +129,10 @@ LayIM_Find = function(){
 				layer.confirm(html, {
 						title:"申请好友",
 					  btn: ['发送','取消'] //按钮
-					}, function(){
-						Find_imSDK.applyRoster(obj.account, $('#'+hid).val());
-					  layer.msg('申请好友请求已发送', {icon: 1});
+					}, function(index){
+						Find_imSDK.applyRoster({account:obj.account,reason:$('#'+hid).val()});
+						 layer.close(index);
+//					  layer.msg('申请好友请求已发送', {icon: 1});
 					}, function(){
 					});
 			}
